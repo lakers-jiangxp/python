@@ -4,12 +4,9 @@
 # Last Modified	: 
 # Version		: 1.0
 #_*_ coding=utf-8 _*_
-shop_list = [
-    ['apple',2000],
-    ['bake',2222],
-    ['shoes',800],
-]
-slary = 9000
+shop_list = [['apple',2000],['bake',2222],['shoes',800],]
+# slary = 9000 
+ slary = input("please input moeny num:")
 shop_list_list=[]
 while True:
     for index,p in enumerate(shop_list):
