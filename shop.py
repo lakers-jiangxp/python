@@ -16,7 +16,7 @@ while True:
     if choice.isdigit():
         choice = int(choice)
         p_price=shop_list[choice][1]
-        if p_price < slary:
+        if p_price <= slary:
             shop_list_list.append(shop_list[choice])
             print shop_list_list
             slary -= p_price
