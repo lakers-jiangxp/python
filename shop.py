@@ -6,7 +6,7 @@
 #_*_ coding=utf-8 _*_
 shop_list = [['apple',2000],['bake',2222],['shoes',800],]
 # slary = 9000 
- slary = input("please input moeny num:")
+slary = input("please input moeny num:")
 shop_list_list=[]
 while True:
     for index,p in enumerate(shop_list):
@@ -18,7 +18,7 @@ while True:
         p_price=shop_list[choice][1]
         if p_price <= slary:
             shop_list_list.append(shop_list[choice])
-            print shop_list_list
+            print shop_list_list    
             slary -= p_price
             print "haos added \033[31;1m%s\033[0m into shop list,your current balance is \033[31;1m%s\033[0m" %(shop_list[choice][0],slary)
         else:
@@ -26,7 +26,7 @@ while True:
     elif choice == 'quit':
         print '--------shopping list--------'
         for k,v in enumerate(shop_list_list):
-            print k,v
+            print k,v 
         print "your current balance is \033[41;1m%s\033[0m "% slary
         print '---------bye------'
         break
